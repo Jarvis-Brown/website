@@ -1,8 +1,38 @@
-.center_everything {
-    
+* {
+  box-sizing: border-box;
 }
+
+/* NAVBAR */
 
 .navbar {
   position: fixed;
-  top: 0px;
+  top: 15px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  padding: 10px 10px;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 100%;
+  min-width:40%;
+  background-color: navy;
 }
+
+#nav-link {
+  margin: 10px 20px 10px 20px;
+  color: white;
+}
+
+.logo {
+  max-width: 50px;
+  min-width: 30px;
+}
+
+/* ABOUT ME PAGE */
+
+.my-pic {
+  object-fit: ;
+}
+
