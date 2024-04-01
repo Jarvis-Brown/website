@@ -223,23 +223,7 @@ iframe {
   padding: 0 70px 70px 60px;
 }
 
-#iframe {
-  display: none;
-}
 
-/* Style the download link */
-#resume-info a {
-  display: block; /* Ensure the link takes up the full width of its container */
-  margin-top: 20px; /* Add some spacing between the link and the navbar */
-  text-align: center; /* Center the link */
-  color: navy; /* Change the link color */
-  text-decoration: none; /* Remove underline */
-  font-weight: bold; /* Make the text bold */
-}
-
-#resume-info a:hover {
-  text-decoration: underline; /* Add underline on hover */
-}
 
 /* ABOUT ME PAGE */
 
@@ -271,6 +255,22 @@ iframe {
   display: flex;
   justify-content: center;
   flex-direction: column;
+}
+
+#resume-button-container {
+  display: flex;
+}
+
+#button-link {
+  justify-self: center;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+
 }
 
 footer {
