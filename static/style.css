@@ -20,7 +20,12 @@ a {
 }
 
 .center_everything {
-  margin: 100px 60px 20px 60px;
+  margin: 200px 60px 20px 60px;
+}
+
+.container {
+  width: 100vw;
+  padding: 100px 60px 60px 60px;
 }
 
 /* NAVBAR */
@@ -247,7 +252,7 @@ iframe {
   margin-left: 40px;
 }
 
-.all-content {
+.all-content { /* this may be deleted and replaced with container */
   flex: 1;
 }
 
