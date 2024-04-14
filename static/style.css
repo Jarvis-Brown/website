@@ -56,6 +56,14 @@ a {
   width:50px
 }
 
+.hamburger {
+
+}
+
+hr {
+  width: 30px;
+}
+
 /*INDEX / HOME PAGE*/
 
 .center_section {
@@ -102,23 +110,20 @@ a {
 .case_studies {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
-  grid-column-gap: 60px; 
-  grid-row-gap: 60px;
+  grid-template-rows: 1fr 1fr;
+  column-gap: 60px; 
+  row-gap: 60px;
 }
 
 #case_section {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 60px;
-  grid-template-rows: auto auto;
-  grid-row-gap: 40px;  
 }
 
 .case-column {
   display: flex;
   justify-content: right;
-  margin-left: 300px;
 }
 
 .case-column a {
@@ -128,7 +133,7 @@ a {
 
 .case_study_icon {
   border-radius: 20px;
-  width: 50%;
+  width: 80%;
   height: auto;
   justify-self: end;
   transition: var(--transition);
@@ -207,9 +212,9 @@ a {
   justify-content: right;
 }
 
-.text-column {
+/*.text-column {
   margin-right: 300px;
-}
+}*/
 
 #video {
   border-radius: 40px;
@@ -249,7 +254,7 @@ iframe {
 .top-me {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  margin: 100px 60px 20px 60px;
+  /*margin: 100px 60px 20px 60px;*/
 }
 
 #column-me-info {
