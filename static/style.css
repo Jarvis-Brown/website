@@ -1,3 +1,15 @@
+/* MEDIA QUERIES */
+
+/*@media (max-width: 1024px) {
+  .container
+
+
+}
+
+@media*/
+
+
+
 /* ALL PAGES */
 
 * {
@@ -25,26 +37,33 @@ a {
 
 .container {
   width: 100vw;
-  padding: 100px 60px 60px 60px;
+  padding: 150px 60px 60px 60px;
+}
+
+.hidden-element-nav {
+  display: none;
+}
+
+.hidden-element {
+  display: none;
 }
 
 /* NAVBAR */
 
-.navbar {
+.nav-container {
+  display: flex;
   position: fixed;
   top: 0px;
   left: 0;
   right: 0;
-  display: flex;
-  justify-content: space-evenly;
-  margin: 0 auto;
-  padding: 10px 10px;
-  align-items: center;
-  flex-wrap: wrap;
   max-width: 100%;
   min-width:40%;
   background-color: navy;
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
+  margin: 0 auto;
+  padding: 10px 60px 10px 60px;
+  justify-content: space-between;
+  align-items: center;
 }
 
 #nav-link {
@@ -57,6 +76,7 @@ a {
 }
 
 .hamburger {
+  display: none;
 
 }
 
@@ -152,42 +172,15 @@ hr {
 #case_study_img {
   height: 100%;
   width: 100%;
-  margin:60px;
 }
 
 #case-body {
   display: flex;
 }
 
-#case_study_container {
-  display: grid;
-  margin: 60px;
-  padding-bottom: 60px;
-}
-
-.travel_case_study {
-  height: 100% !important;
-  width: 100% !important;
-  display: flex;
-  justify-self: center;
-}
-
-.game_case_study {
-  height: 100% !important;
-  width: 100% !important;
-  display: flex;
-  justify-self: center;
-}
-
 /* DESIGN MOCKUPS */
 
-.hidden-element-nav {
-  display: none;
-}
 
-.hidden-element {
-  display: none;
-}
 
 /*ANIMATION PAGE*/
 
@@ -195,8 +188,8 @@ hr {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 60px;
-  grid-template-rows: auto auto;
-  grid-row-gap: 40px;  
+  grid-row-gap: 40px;
+
 }
 
 .video-column video {
@@ -212,13 +205,36 @@ hr {
   justify-content: right;
 }
 
+.all-vids {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  row-gap: 250px;
+}
+
+.video-1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.video-2 {
+  grid-column-start: 3;
+  grid-column-end: 5;
+}
+
+.video-3 {
+  grid-column-start: -4;
+  grid-column-end: -2;
+}
+
+
 /*.text-column {
   margin-right: 300px;
 }*/
 
 #video {
   border-radius: 40px;
-  width: 50%;
+  width: 90%;
   height: auto;
 }
 
@@ -274,6 +290,7 @@ iframe {
 #resume-button-container {
   display: flex;
   justify-content: center;
+  margin-top: 20px;
 }
 
 #button-link {
@@ -285,6 +302,11 @@ iframe {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  transition: var(--transition);
+}
+
+#button-link:hover {
+  transform: var(--transform);
 }
 
 footer {
@@ -293,7 +315,8 @@ footer {
   width: 100vw;
   justify-content: center;
   bottom: 0;
-  height: 200px;
+  height: 220px;
+  position: absolute;
 }
 
 #footer-icon {
