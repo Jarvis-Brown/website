@@ -323,7 +323,6 @@ h4 {
 
 #resume-info {
   margin: 6.25rem 3.75rem 1.25rem 3.75rem;
-
 }
 
 iframe {
@@ -393,7 +392,7 @@ footer {
   display: flex;
   width: 100vw;
   justify-content: center;
-  bottom: 0;
+  /*bottom: 0;*/
   height: 13.75rem;
   position: absolute;
 }
