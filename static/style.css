@@ -1,15 +1,3 @@
-/* MEDIA QUERIES */
-
-/*@media (max-width: 1024px) {
-  .container
-
-
-}
-
-@media*/
-
-
-
 /* ALL PAGES */
 
 * {
@@ -37,7 +25,8 @@ a {
 }
 
 .container {
-  width: 100vw;
+  /*width: 100vw;*/
+  /*height: 100vh;*/
   padding: 9.375rem 3.75rem 3.75rem 3.75rem;
 }
 
@@ -217,13 +206,13 @@ h4 {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   column-gap: 3.75rem; 
-  row-gap: 3.75rem;
+  row-gap: 5.75rem;
 }
 
 #case_section {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 3.75rem;
+  gap: 1rem;
 }
 
 .case-column {
@@ -233,7 +222,7 @@ h4 {
 
 .case-column a {
   display: flex;
-  justify-content: right;
+  justify-content: center;
 }
 
 .case_study_icon {
@@ -270,7 +259,7 @@ h4 {
 .video-portion {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 3.75rem;
+  gap: 2rem;
   grid-row-gap: 2.5rem;
 }
 
@@ -292,6 +281,7 @@ h4 {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   row-gap: 15.625rem;
+  column-gap: 2rem;
 }
 
 .video-1 {
@@ -309,14 +299,11 @@ h4 {
   grid-column-end: -2;
 }
 
-/*.text-column {
-  margin-right: 300px;
-}*/
-
 #video {
   border-radius: 2.5rem;
-  width: 90%;
-  height: auto;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /*EXPERIENCE PAGE*/
@@ -337,9 +324,9 @@ iframe {
 
 .my-pic {
   width: 28.125rem;
-  height: auto;
   max-width: 28.125rem;
   max-height: 28.125rem;
+  height: auto;
   object-fit: cover;
   border-radius: 50%;
   justify-self: center;
@@ -368,7 +355,6 @@ iframe {
 #resume-button-container {
   display: flex;
   justify-content: center;
-  margin-top: 1.25rem;
 }
 
 #button-link {
@@ -417,6 +403,125 @@ footer {
 #footer-images-container a:hover img {
   filter: invert(100%);
   transform: var(--transform);
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 1024px) {
+
+  /*ANIMATION PAGE*/
+
+  .all-vids {    
+    row-gap: 1.625rem
+  }
+
+  #video {
+    max-height: 80%;
+    max-width: 100%;
+    object-fit: cover;
+  }
+
+  /*ABOUT ME PAGE*/
+
+  .top-me {
+    grid-template-columns: unset;
+  }
+
+  .my-pic {
+    width: 15rem;
+    height: 15rem;
+  }
+
+  #resume-button-container {
+    margin-top: 1.25rem;
+  }
+
+  #column-me-info {
+    margin-left: 0rem;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .container {
+    padding: 9.375rem 1.75rem 3.75rem 1.75rem;
+  }
+
+  .nav-container {
+    padding: 0.625rem 1.75rem 0.625rem 1.75rem;
+  }
+
+  /* INDEX PAGE */
+
+  .opening_header h1 {
+    font-size: 3rem;
+  }
+
+  .opening_header h2 {
+    font-size: 2rem;
+  }
+
+  .bell {
+    width: 400px;
+  }
+
+  #index-text-container {
+    max-width: 100%;
+  }
+
+  /* ANIMATION PAGE */
+
+  .all-vids {
+    display: block;
+  }
+
+  .video-portion {
+    margin-bottom: 3.5rem;
+  }
+
+  .video-3 {
+    margin-bottom: 0rem;
+  }
+
+  #video {
+    max-height: 100%;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 425px) {
+
+  /* ANIMATION PAGE */
+
+  .video-portion {
+    display: block; 
+  }
+
+  /* CASE STUDY PAGE */
+
+  .case_studies {
+    grid-template-columns: unset;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  #case_section {
+    grid-template-columns: unset;
+    display: block;
+  }
+
+  .case_study_icon {
+    margin-bottom: 1.25rem;
+  }
+
+  /* ABOUT ME PAGE */
+
+  #footer-text {
+    padding: 0 1.75rem 0 1.75rem;
+    text-align: center; 
+  }
+
+
+
 }
 
 
