@@ -1,0 +1,305 @@
+/* ALL PAGES */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "ui-sans-serif", "Segoe UI", sans-serif;
+}
+
+:root {
+    --transition: filter 0.3s ease, transform 0.3s ease;
+    --transform: scale(1.1);
+}
+
+a {
+    text-decoration: none;
+}
+
+.center_everything {
+    margin: 100px 60px 20px 60px;
+}
+
+/* NAVBAR */
+
+.navbar {
+    position: fixed;
+    top: 0px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    padding: 10px 10px;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 100%;
+    min-width: 40%;
+    background-color: navy;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+#nav-link {
+    margin: 10px 20px 10px 20px;
+    color: white;
+}
+
+.logo {
+    width: 50px;
+}
+
+/*INDEX / HOME PAGE*/
+
+.center_section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 200px);
+    margin-top: 150px;
+}
+
+.opening_header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    top: 30%;
+    left: 50%;
+}
+
+.opening_header h1 {
+    font-size: 80px;
+}
+
+.opening_header h2 {
+    font-size: 40px;
+}
+
+.opening_header h1,
+.opening_header h2,
+.opening_header h4 {
+    margin: 20px !important;
+    text-align: center;
+}
+
+#index-text-container {
+    max-width: 55%;
+    text-align: center;
+}
+
+.bell {
+    max-width: 600px;
+}
+
+/* UX CASE STUDY PAGE */
+
+.case_studies {
+    margin: 100px 60px 20px 60px;
+}
+
+#case_section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    grid-template-rows: auto auto;
+    grid-row-gap: 40px;
+}
+
+.case-column {
+    display: flex;
+    justify-content: right;
+    margin-left: 300px;
+    z-index: 1;
+}
+
+.case-column a {
+    display: flex;
+    justify-content: right;
+}
+
+.case_study_icon {
+    border-radius: 20px;
+    width: 50%;
+    height: auto;
+    justify-self: end;
+    transition: var(--transition);
+}
+
+.case-column img {
+    transition: var(--transition);
+}
+
+.case-column img:hover {
+    transform: var(--transform);
+}
+
+/* UX CASE STUDY IMAGES */
+
+#case_study_img {
+    height: 100%;
+    width: 100%;
+    margin: 60px;
+}
+
+#case-body {
+    display: flex;
+}
+
+#case_study_container {
+    display: grid;
+    margin: 60px;
+    padding-bottom: 60px;
+}
+
+.travel_case_study {
+    height: 100% !important;
+    width: 100% !important;
+    display: flex;
+    justify-self: center;
+}
+
+.game_case_study {
+    height: 100% !important;
+    width: 100% !important;
+    display: flex;
+    justify-self: center;
+}
+
+/* DESIGN MOCKUPS */
+
+.hidden-element-nav {
+    display: none;
+}
+
+.hidden-element {
+    display: none;
+}
+
+/*ANIMATION PAGE*/
+
+.video-portion {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    grid-template-rows: auto auto;
+    grid-row-gap: 40px;
+}
+
+.video-column video {
+    transition: var(--transition);
+}
+
+.video-column video:hover {
+    transform: var(--transform);
+}
+
+.video-column {
+    display: flex;
+    justify-content: right;
+}
+
+.text-column {
+    margin-right: 300px;
+}
+
+#video {
+    border-radius: 40px;
+    width: 50%;
+    height: auto;
+}
+
+/*EXPERIENCE PAGE*/
+
+#resume-info {
+    margin: 100px 60px 20px 60px;
+}
+
+iframe {
+    position: absolute;
+    top: 80px;
+    width: calc(100% - 20px);
+    height: calc(100% - 20px);
+    padding: 0 70px 70px 60px;
+}
+
+/* ABOUT ME PAGE */
+
+.my-pic {
+    width: 450px;
+    height: auto;
+    max-width: 450px;
+    max-height: 450px;
+    object-fit: cover;
+    border-radius: 50%;
+    justify-self: center;
+}
+
+.top-me {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin: 100px 60px 20px 60px;
+}
+
+#column-me-info {
+    margin-left: 40px;
+}
+
+.all-content {
+    flex: 1;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#resume-button-container {
+    display: flex;
+}
+
+#button-link {
+    justify-self: center;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: lightgrey;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    height: 200px;
+}
+
+#footer-icon {
+    width: 50px;
+}
+
+#footer-text h3 {
+    text-align: center;
+}
+
+#footer-images-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#footer-images-container img {
+    transition: var(--transition);
+}
+
+#footer-images-container a:hover img {
+    filter: invert(100%);
+    transform: var(--transform);
+}
