@@ -30,8 +30,9 @@ a {
 /* NAVBAR */
 
 .navbar {
-    background-color: navy;
-    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
+    /*background-color: #000080;*/
+    background-color: white;
+    /*box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);*/
     position: fixed;
     max-width: 100%;
     min-width: 40%;
@@ -45,7 +46,7 @@ a {
 #nav-link {
     /*margin: 10px 20px 10px 20px;*/
     margin: 0 15px;
-    color: white;
+    color: black;
     transition: color 0.3s ease;
 }
 
@@ -57,10 +58,19 @@ a {
     justify-content: space-between;
     padding: 10px 40px;
     align-items: center;
+    display: flex;
 }
 
 .logo {
     width: 50px;
+}
+
+.navbar-line {
+    width: 100%;
+    border: none;
+    border-top: 2px solid black;
+    margin: 10px 10px 0px 10px;
+    justify-self: center;
 }
 
 /*INDEX / HOME PAGE*/
@@ -311,7 +321,8 @@ iframe {
 }
 
 footer {
-    background-color: lightgrey;
+    /*background-color: lightgrey;*/
+    background-color: white;
     display: flex;
     width: 100%;
     justify-content: center;
@@ -320,8 +331,13 @@ footer {
     height: 200px;
 }
 
-#footer-icon {
+.footer-icon {
     width: 50px;
+    transition: filter 0.3s;
+}
+
+.footer-icon:hover {
+    filter: sepia(1) saturate(7) hue-rotate(90deg); /* Adjust for desired green */
 }
 
 #footer-text h3 {
@@ -338,6 +354,7 @@ footer {
 }
 
 #footer-images-container a:hover img {
-    filter: invert(100%);
+    /*filter: invert(100%);*/
     transform: var(--transform);
+    filter: hue-rotate(120deg) saturate(300%) brightness(1.2);
 }
