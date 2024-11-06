@@ -210,6 +210,11 @@ a {
     grid-row-gap: 40px;
 }
 */
+
+#animation_body {
+    padding-top: 100px;
+}
+
 .vid-all-col {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -279,7 +284,8 @@ iframe {
     max-width: 450px;
     max-height: 450px;
     object-fit: cover;
-    border-radius: 50%;
+    /*border-radius: 50%;*/
+    border-radius: 5%;
     justify-self: center;
 }
 
@@ -329,6 +335,10 @@ footer {
     position: relative;
     bottom: 0;
     height: 200px;
+}
+
+#navbar_line_footer {
+    margin-bottom: 20px;
 }
 
 .footer-icon {
