@@ -10,6 +10,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    overflow: hidden;
 }
 
 :root {
@@ -24,8 +25,6 @@ a {
 .center_everything {
     margin: 150px 60px 20px 60px;
 }
-
-/* Media Queries */
 
 /* NAVBAR */
 
@@ -69,7 +68,7 @@ a {
     width: 100%;
     border: none;
     border-top: 2px solid black;
-    margin: 10px 10px 0px 10px;
+    margin: 10px 10px 0px 10px;*/
     justify-self: center;
 }
 
@@ -132,6 +131,23 @@ a {
     grid-row-gap: 40px;
 }
 
+/*
+.fit_for_you_section {
+    /padding-left: 200px;
+}
+
+.games_n_things_section {
+    padding-left: 200px;
+}
+
+.travel_xp_section {
+    padding-right: 200px;
+}
+
+.your_tunes_section {
+    padding-right: 200px;
+}*/
+    
 .case-column {
     justify-content: center;
 }
@@ -282,8 +298,8 @@ iframe {
     width: 450px;
     height: auto;
     max-width: 450px;
-    max-height: 450px;
-    object-fit: cover;
+    max-height: auto;
+    object-fit: contain;
     /*border-radius: 50%;*/
     border-radius: 5%;
     justify-self: center;
@@ -368,3 +384,5 @@ footer {
     transform: var(--transform);
     filter: hue-rotate(120deg) saturate(300%) brightness(1.2);
 }
+
+/* Media Queries */
