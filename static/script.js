@@ -19,3 +19,16 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 });
+
+// toggle hamburger
+
+function toggleMenu() {
+    const navLinks = document.querySelector(".nav-links");
+    const navbarLine = document.querySelector(".navbar-line");
+
+    // Toggle visibility of the nav links
+    navLinks.classList.toggle("show");
+
+    // Toggle visibility of the navbar line (hr)
+    navbarLine.classList.toggle("hidden");
+}

@@ -26,6 +26,10 @@ a {
     margin: 150px 60px 20px 60px;
 }
 
+p {
+    font-size: 1em;
+}
+
 /* NAVBAR */
 
 .navbar {
@@ -64,11 +68,17 @@ a {
     width: 50px;
 }
 
+.hamburger {
+    display: none;
+    cursor: pointer;
+    font-size: 1.5em;
+}
+
 .navbar-line {
     width: 100%;
     border: none;
     border-top: 2px solid black;
-    margin: 10px 10px 0px 10px;*/
+    margin: 10px 10px 0px 10px;
     justify-self: center;
 }
 
@@ -92,11 +102,11 @@ a {
 }
 
 .opening_header h1 {
-    font-size: 80px;
+    font-size: 5em;
 }
 
 .opening_header h2 {
-    font-size: 40px;
+    font-size: 2.5em;
 }
 
 .opening_header h1,
@@ -147,7 +157,7 @@ a {
 .your_tunes_section {
     padding-right: 200px;
 }*/
-    
+
 .case-column {
     justify-content: center;
 }
@@ -319,12 +329,6 @@ iframe {
     flex: 1;
 }
 
-.contact {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-
 #resume-button-container {
     display: flex;
     justify-content: center;
@@ -340,6 +344,17 @@ iframe {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+}
+
+/*contact*/
+
+#github-icon {
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 footer {
@@ -362,8 +377,8 @@ footer {
     transition: filter 0.3s;
 }
 
-.footer-icon:hover {
-    filter: sepia(1) saturate(7) hue-rotate(90deg); /* Adjust for desired green */
+#github-icon:hover {
+    filter: hue-rotate(120deg) saturate(300%) brightness(1.2);
 }
 
 #footer-text h3 {
@@ -386,3 +401,38 @@ footer {
 }
 
 /* Media Queries */
+
+/* Phone */
+
+@media (max-width: 430px) {
+    .center_section {
+    }
+}
+
+/* tablet */
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; /* Hide links on small screens */
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: white;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+        padding: 0px 40px;
+    }
+
+    .navbar-line.hidden {
+        display: none;
+    }
+}
